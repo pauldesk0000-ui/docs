@@ -33,7 +33,7 @@ A Plan is a concrete event with everything nailed down: a date, a time, and a ma
 
 **A Plan includes:**
 - **Event date** — the calendar day the event takes place
-- **Event time** — the start time (used to calculate the end and schedule reminders)
+- **Event time** — the start time (used to schedule reminders and to calculate when the event is automatically marked completed)
 - **Max participants** — the cap on how many people can join
 
 ### Joining a Plan
@@ -46,7 +46,7 @@ A Plan moves through the following statuses automatically:
 
 - **Active** — the Plan is open and accepting joins (or closed once full)
 - **Closed** — the Plan has reached its maximum participant count; no new joins are accepted
-- **Completed** — the Plan's event time has passed and a 5-minute grace period has elapsed
+- **Completed** — 5 minutes after the Plan's scheduled start time, WishWe automatically marks it completed
 
 You don't need to do anything to trigger these changes — WishWe handles them for you.
 
@@ -75,7 +75,7 @@ You don't need to do anything to trigger these changes — WishWe handles them f
     The Plan has reached its maximum participant count. No additional joins are accepted. Existing participants are still confirmed.
   </Step>
   <Step title="Completed (Plans only)">
-    Five minutes after the Plan's scheduled end time, WishWe marks it as completed. The event moves out of your active feed and into your event history.
+    Five minutes after the Plan's scheduled start time, WishWe automatically marks it as completed. The event moves out of your active feed and into your event history.
   </Step>
 </Steps>
 

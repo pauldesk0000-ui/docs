@@ -1,72 +1,84 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "WishWe",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/a0ff0ed6-85e5-496e-9f52-229012e8824e.svg",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "primary": "#f3f3e3",
+    "light": "#9c9c84",
+    "dark": "#485028"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Get Started",
+      "href": "https://wishwe.online"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Account & Profile",
+            "pages": [
+              "account/sign-up",
+              "account/profile-setup",
+              "account/privacy-settings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Using WishWe",
+        "groups": [
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/wishes-and-plans",
+              "concepts/visibility",
+              "concepts/notifications"
+            ]
+          },
+          {
+            "group": "Wishes & Plans",
+            "pages": [
+              "guides/creating-a-wish",
+              "guides/creating-a-plan",
+              "guides/converting-wish-to-plan",
+              "guides/joining-and-leaving"
+            ]
+          },
+          {
+            "group": "Friends & Sharing",
+            "pages": [
+              "guides/adding-friends",
+              "guides/invite-links",
+              "guides/sharing-events"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Mobile App",
+        "groups": [
+          {
+            "group": "Mobile",
+            "pages": [
+              "mobile/overview",
+              "mobile/getting-started"
+            ]
+          }
+        ]
+      }
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
